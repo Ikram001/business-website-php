@@ -1,8 +1,8 @@
 <?php include('includes/header.php'); ?>
 <main>
   <section class="hero">
-    <h1>Welcome to Foodie's Delight</h1>
-    <p>Freshly prepared food that brings happiness to your table.</p>
+    <h1 class="black">Welcome to Foodie's Delight</h1>
+    <p class="black">Freshly prepared food that brings happiness to your table.</p>
   </section>
 
   <section class="top-items">
@@ -37,18 +37,6 @@
   </section>
 </main>
 
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-    const buttons = document.querySelectorAll('.add-to-cart');
-    buttons.forEach(button => {
-      button.addEventListener('click', function() {
-        const item = this.getAttribute('data-item');
-        const price = parseFloat(this.getAttribute('data-price'));
-        const url = `add_to_cart.php?item=${item}&price=${price}`;
-        window.location.href = url;
-      });
-    });
-  });
-</script>
+<script src="./cart.js"></script>
 
 <?php include('includes/footer.php'); ?>

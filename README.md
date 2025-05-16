@@ -1,2 +1,2 @@
 # business-website-php
-Business Website using PHP.
+Assignment: Make a Business Website using PHP.
